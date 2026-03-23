@@ -3,8 +3,7 @@ Library           Selenium2Library
 
 *** Keywords ***
 Login
-    Open Browser    https://parking-garage-app.netlify.app/    firefox
-    Click Button    /html/body/div/main/div/div[1]/div/a[1]
+    Open Browser    https://parking-garage-app.netlify.app/login    firefox
     Input Text    //*[@id="email"]    nagy.tamas@diak.szbi-pg.hu
-    Input Password    //*[@id="password"]d     npala
+    Input Password    //*[@id="password"]     npala
     Click Button  //*[@id="login-button"]

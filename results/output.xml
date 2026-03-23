@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.1 (Python 3.13.5 on win32)" generated="2026-03-23T09:43:31.316715" rpa="false" schemaversion="5">
+<suite id="s1" name="NTomiPG10-Robot Parking Garage" source="C:\Users\NagyTamas\Documents\GitHub\NTomiPG10-Robot_Parking_Garage">
+<suite id="s1-s1" name="ParkingGarage" source="C:\Users\NagyTamas\Documents\GitHub\NTomiPG10-Robot_Parking_Garage\ParkingGarage.robot">
+<test id="s1-s1-t1" name="Sikeres uj auto felvitele" line="92">
+<kw name="Login" owner="LoginKeywords2">
+<kw name="Open Browser" owner="Selenium2Library">
+<msg time="2026-03-23T09:43:31.600095" level="INFO">Opening browser 'firefox' to base url 'https://parking-garage-app.netlify.app/login'.</msg>
+<arg>https://parking-garage-app.netlify.app/login</arg>
+<arg>firefox</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-03-23T09:43:31.599722" elapsed="6.540227"/>
+</kw>
+<kw name="Input Text" owner="Selenium2Library">
+<msg time="2026-03-23T09:43:38.140900" level="INFO">Typing text 'nagy.tamas@diak.szbi-pg.hu' into text field '//*[@id="email"]'.</msg>
+<arg>//*[@id="email"]</arg>
+<arg>nagy.tamas@diak.szbi-pg.hu</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-03-23T09:43:38.140309" elapsed="0.085924"/>
+</kw>
+<kw name="Input Password" owner="Selenium2Library">
+<msg time="2026-03-23T09:43:38.226807" level="INFO">Typing password into text field '//*[@id="password"]'.</msg>
+<msg time="2026-03-23T09:43:38.239855" level="INFO">Temporally setting log level to: NONE</msg>
+<arg>//*[@id="password"]</arg>
+<arg>npala</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-03-23T09:43:38.226481" elapsed="0.036888"/>
+</kw>
+<kw name="Click Button" owner="Selenium2Library">
+<msg time="2026-03-23T09:43:38.263903" level="INFO">Clicking button '//*[@id="login-button"]'.</msg>
+<arg>//*[@id="login-button"]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2026-03-23T09:43:38.263592" elapsed="0.097823"/>
+</kw>
+<status status="PASS" start="2026-03-23T09:43:31.598890" elapsed="6.763403"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-03-23T09:43:39.366401" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-03-23T09:43:38.363940" elapsed="1.003319"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="Selenium2Library">
+<msg time="2026-03-23T09:43:44.623940" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-26.png"&gt;&lt;img src="selenium-screenshot-26.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2026-03-23T09:43:44.624315" level="FAIL">Element '//*[@id="cars-link"]' not visible after 5 seconds.</msg>
+<arg>//*[@id="cars-link"]</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="FAIL" start="2026-03-23T09:43:39.368817" elapsed="5.262164">Element '//*[@id="cars-link"]' not visible after 5 seconds.</status>
+</kw>
+<kw name="Click Button" owner="Selenium2Library">
+<arg>//*[@id="cars-link"]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-03-23T09:43:44.631426" elapsed="0.000149"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2026-03-23T09:43:44.631856" elapsed="0.000125"/>
+</kw>
+<kw name="Input Text" owner="Selenium2Library">
+<arg>id:license-plate-input</arg>
+<arg>ABC-123</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-03-23T09:43:44.632250" elapsed="0.000119"/>
+</kw>
+<kw name="Click Button" owner="Selenium2Library">
+<arg>id:save-car-button</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-03-23T09:43:44.632639" elapsed="0.000118"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2026-03-23T09:43:44.633026" elapsed="0.000119"/>
+</kw>
+<kw name="Page Should Contain" owner="Selenium2Library">
+<arg>ABC-123</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="NOT RUN" start="2026-03-23T09:43:44.633418" elapsed="0.000118"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2026-03-23T09:43:44.634057" elapsed="0.000125"/>
+</kw>
+<kw name="Close Browser" owner="Selenium2Library">
+<doc>Closes the current browser.</doc>
+<status status="NOT RUN" start="2026-03-23T09:43:44.634465" elapsed="0.000132"/>
+</kw>
+<status status="FAIL" start="2026-03-23T09:43:31.595630" elapsed="13.039328">Element '//*[@id="cars-link"]' not visible after 5 seconds.</status>
+</test>
+<status status="FAIL" start="2026-03-23T09:43:31.363515" elapsed="13.281353"/>
+</suite>
+<status status="FAIL" start="2026-03-23T09:43:31.323845" elapsed="13.324861"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="NTomiPG10-Robot Parking Garage" id="s1" pass="0" fail="1" skip="0">NTomiPG10-Robot Parking Garage</stat>
+<stat name="ParkingGarage" id="s1-s1" pass="0" fail="1" skip="0">NTomiPG10-Robot Parking Garage.ParkingGarage</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
